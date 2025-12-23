@@ -1,0 +1,88 @@
+/* frontend/assets/css/list_cards.css */
+
+/* Κεντρικό πλαίσιο κάρτας */
+.list-card-horizontal {
+    background-color: #fff;
+    margin-bottom: 24px;
+    display: flex;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.list-card-horizontal:hover {
+    transform: translateY(-5px);
+}
+
+/* Περιοχή Φυσαρμόνικας (Αριστερά) */
+.collage-link-wrapper {
+    display: block;
+    flex-shrink: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.collage-accordion {
+    width: 400px;
+    min-width: 400px;
+    height: 220px;
+    display: flex;
+    background-color: #1a1a1a;
+    overflow: hidden;
+}
+
+.accordion-item-img {
+    flex: 1;
+    height: 100%;
+    transition: flex 0.5s ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.accordion-item-img:hover {
+    flex: 4; /* Εφέ ανοίγματος */
+}
+
+.accordion-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Όχι stretch */
+}
+
+/* Περιοχή Πληροφοριών (Δεξιά) */
+.list-info-content {
+    padding: 1.5rem 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Σύνδεσμος Δημιουργού */
+.creator-info-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.creator-avatar-small {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #dee2e6;
+    margin-right: 10px;
+}
+
+/* Στατιστικά */
+.list-stats-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.list-stats-row i {
+    color: #dc3545;
+}
